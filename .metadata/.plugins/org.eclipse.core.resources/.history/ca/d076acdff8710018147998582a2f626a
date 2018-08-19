@@ -1,9 +1,0 @@
-package com.tutorialspoint;
-
-public class CStartEventHandler implements
-		ApplicationListener<ContextStartedEvent> {
-
-	public void onApplicationEvent(ContextStoppedEvent event) {
-		System.out.println("ContextStoppedEvent Received");
-	}
-}

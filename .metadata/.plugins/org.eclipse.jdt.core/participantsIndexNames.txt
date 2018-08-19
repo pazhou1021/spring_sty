@@ -1,9 +1,17 @@
 INDEX VERSION 1.127
 E:\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2871911696.index
 \mvcDemo\src\main\java
+E:\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\818504825.index
+\websocketDemo\src\main\resources
 E:\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4076202420.index
 \mvcDemo\src\main\java
 E:\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3258178164.index
 \mvcDemo\src\main\java
+E:\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1892867069.index
+\WebScoketTest\src\main\java
+E:\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1013178249.index
+\websocket\src\main\java
 E:\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3194427519.index
 \mvcDemo\src\main\java
+E:\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\782410935.index
+\mavenDemo\src\main\java

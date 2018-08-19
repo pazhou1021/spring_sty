@@ -1,0 +1,31 @@
+<script type="text/javascript"  
+        src="http://localhost:8080/js/sockjs-0.3.min.js"></script>  
+    <script>  
+        var websocket;  
+      
+        if ('WebSocket' in window) {  
+            websocket = new WebSocket("ws://" + document.location.host + "/Bank/webSocketServer");  
+        } else if ('MozWebSocket' in window) {  
+            websocket = new MozWebSocket("ws://" + document.location.host + "/Bank/webSocketServer");  
+        } else {  
+            websocket = new SockJS("http://" + document.location.host + "/Bank/sockjs/webSocketServer");  
+        }  
+      
+        websocket.onopen = function(evnt) {};  
+        websocket.onmessage = function(evnt) {  
+            $("#test").html("(<font color='red'>" + evnt.data + "</font>)")  
+        };  
+      
+        websocket.onerror = function(evnt) {};  
+        websocket.onclose = function(evnt) {}  
+      
+        $('#btn').on('click', function() {  
+            if (websocket.readyState == websocket.OPEN) {  
+                var msg = $('#id').val();  
+                //调用后台handleTextMessage方法  
+                websocket.send(msg);  
+            } else {  
+                alert("连接失败!");  
+            }  
+        });  
+    </script>  

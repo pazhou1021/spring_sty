@@ -1,0 +1,228 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.wll</groupId>
+  <artifactId>WebScoketTest</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>WebScoketTest Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+  <properties>  
+        <!-- java ee jar包 -->  
+        <javaee.version>7.0</javaee.version>  
+        <!-- jstl jar包 -->  
+        <jstl.version>1.2</jstl.version>  
+        <!-- mysql-connector包 -->  
+        <mysql.version>5.1.30</mysql.version>  
+        <!-- commons-dbcp -->  
+        <dbcp.version>1.4</dbcp.version>  
+        <!-- mybatis-spring整合包 -->  
+        <mybatis-spring.version>1.3.0</mybatis-spring.version>  
+        <!-- spring版本号 -->  
+        <spring.version>4.3.10.RELEASE</spring.version>  
+        <!-- mybatis版本号 -->  
+        <mybatis.version>3.4.1</mybatis.version>  
+        <!-- jackson版本号 -->  
+        <jackson.verson>2.9.2</jackson.verson>  
+        <!-- junit -->  
+        <junit-version>4.12</junit-version>  
+        <!-- cglib -->  
+        <cglib-version>3.1</cglib-version>  
+        <!-- log4j日志文件管理包版本 -->  
+        <slf4j.version>1.7.21</slf4j.version>  
+        <log4j.version>1.2.17</log4j.version>  
+    </properties>
+    
+  <dependencies>
+     <!-- 导入java ee jar 包 -->  
+        <dependency>  
+            <groupId>javax</groupId>  
+            <artifactId>javaee-api</artifactId>  
+            <version>${javaee.version}</version>  
+        </dependency>  
+        <!-- jstl包 -->  
+        <!-- JSTL标签类 -->  
+        <dependency>  
+            <groupId>jstl</groupId>  
+            <artifactId>jstl</artifactId>  
+            <version>${jstl.version}</version>  
+        </dependency>  
+        <!-- 导入Mysql数据库链接jar包 -->  
+        <dependency>  
+            <groupId>mysql</groupId>  
+            <artifactId>mysql-connector-java</artifactId>  
+            <version>${mysql.version}</version>  
+        </dependency>  
+        <!-- dbcp数据库连接池包 -->  
+        <dependency>  
+            <groupId>commons-dbcp</groupId>  
+            <artifactId>commons-dbcp</artifactId>  
+            <version>${dbcp.version}</version>  
+        </dependency>  
+        <!--mybatis-spring整合包 -->  
+        <dependency>  
+            <groupId>org.mybatis</groupId>  
+            <artifactId>mybatis-spring</artifactId>  
+            <version>${mybatis-spring.version}</version>  
+        </dependency>  
+        <!-- mybatis-核心包 -->  
+        <dependency>  
+            <groupId>org.mybatis</groupId>  
+            <artifactId>mybatis</artifactId>  
+            <version>${mybatis.version}</version>  
+        </dependency>  
+  
+        <!--spring-核心包 -->  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-core</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-web</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-oxm</artifactId>  
+            <version>4.2.7.RELEASE</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-tx</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-jdbc</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-webmvc</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-aop</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-context-support</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.springframework</groupId>  
+            <artifactId>spring-test</artifactId>  
+            <version>${spring.version}</version>  
+        </dependency>  
+        <dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-aspects</artifactId>
+		    <version>${spring.version}</version>
+		</dependency>
+  
+        <!-- jackson包 -->  
+        <dependency>  
+            <groupId>com.fasterxml.jackson.core</groupId>  
+            <artifactId>jackson-databind</artifactId>  
+            <version>${jackson.verson}</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>com.fasterxml.jackson.core</groupId>  
+            <artifactId>jackson-core</artifactId>  
+            <version>${jackson.verson}</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>com.fasterxml.jackson.core</groupId>  
+            <artifactId>jackson-annotations</artifactId>  
+            <version>${jackson.verson}</version>  
+        </dependency>  
+        <dependency>
+		    <groupId>com.alibaba</groupId>
+		    <artifactId>fastjson</artifactId>
+		    <version>1.2.47</version>
+		</dependency>
+		<dependency>  
+			<groupId>net.sf.json-lib</groupId>  
+			<artifactId>json-lib</artifactId>  
+			<version>2.4</version> 
+			<classifier>jdk15</classifier> 
+		</dependency>  
+		  
+        <!-- 测试包 -->  
+        <dependency>  
+            <groupId>junit</groupId>  
+            <artifactId>junit</artifactId>  
+            <version>${junit-version}</version>  
+            <scope>test</scope>  
+        </dependency>  
+        <!-- cglib包 -->  
+        <dependency>  
+            <groupId>cglib</groupId>  
+            <artifactId>cglib</artifactId>  
+            <version>${cglib-version}</version>  
+        </dependency>  
+        <!--日志记录的jar包 -->  
+        <dependency>  
+            <groupId>log4j</groupId>  
+            <artifactId>log4j</artifactId>  
+            <version>${log4j.version}</version>  
+        </dependency>  
+        <dependency>  
+            <groupId>org.slf4j</groupId>  
+            <artifactId>slf4j-api</artifactId>  
+            <version>${slf4j.version}</version>  
+        </dependency>  
+        <!-- servlet依赖 -->
+        <dependency>
+		    <groupId>javax.servlet</groupId>
+		    <artifactId>javax.servlet-api</artifactId>
+		    <version>4.0.0</version>
+		    <scope>provided</scope>
+		</dependency>
+        <!--WebSocket 依赖 -->
+	    <dependency>
+	      <groupId>org.springframework</groupId>
+	      <artifactId>spring-messaging</artifactId>
+	      <version>4.3.14.RELEASE</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.springframework</groupId>
+	      <artifactId>spring-websocket</artifactId>
+	      <version>4.1.4.RELEASE</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>com.google.code.gson</groupId>
+	      <artifactId>gson</artifactId>
+	      <version>2.3.1</version>
+	    </dependency>
+	    <dependency>
+	      <groupId>org.hamcrest</groupId>
+	      <artifactId>hamcrest-core</artifactId>
+	      <version>1.3</version>
+	    </dependency>
+	    <!-- shiro需要的依赖 -->
+	  <dependency>
+	    <groupId>org.apache.shiro</groupId>
+	    <artifactId>shiro-core</artifactId>
+	    <version>1.4.0</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.shiro</groupId>
+	    <artifactId>shiro-web</artifactId>
+	    <version>1.4.0</version>
+	  </dependency>
+	  <dependency>
+	    <groupId>org.apache.shiro</groupId>
+	    <artifactId>shiro-spring</artifactId>
+	    <version>1.4.0</version>
+	  </dependency>
+    </dependencies>
+  <build>
+    <finalName>ScoketTest</finalName>
+  </build>
+</project>

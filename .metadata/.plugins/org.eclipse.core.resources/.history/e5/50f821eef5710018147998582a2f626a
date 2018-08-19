@@ -1,6 +1,0 @@
-package com.tutorialspoint;
-
-@Configuration
-public class HelloWorldConfig {
-
-}
